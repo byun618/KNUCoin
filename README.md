@@ -5,8 +5,8 @@
 
 ## **Hyperledger Fabric of Blockchain**     
     
-  - **OS**  
-     Linux Ubuntu   
+  - **OS**
+    - Linux Ubuntu   
      
   - **Default Env**  
     - Go  
