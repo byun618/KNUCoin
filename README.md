@@ -3,8 +3,8 @@
 
 # **Technologies**  
 
-- **Blockchain**    
-- **Hyperledger Fabric**  
+## **Blockchain**    
+## **Hyperledger Fabric**  
     
   - **OS**  
      Linux Ubuntu   
