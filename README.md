@@ -3,17 +3,17 @@
 
 # **Technologies**  
 
-- Blockchain    
-- Hyperledger Fabric  
+- **Blockchain**    
+- **Hyperledger Fabric**  
     
-  1. **OS**  
-    1. Linux Ubuntu  
-            
-  1. **Default Env**  
-    1. Go  
-    1. Docker  
-    1. Docker Compose  
-    1. NodeJS + NPM  
+  - **OS**  
+     Linux Ubuntu   
+     
+  - **Default Env**  
+     Go  
+     Docker  
+     Docker Compose  
+     NodeJS + NPM  
 
 ---
 ## 개발 파트 및 구성 인원
