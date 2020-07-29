@@ -1,19 +1,19 @@
 # KNU Coin With Hyperledger Fabric
 - 대학교 축제에 화폐 대용의 대체 화폐
 
-- **Technologies**  
+# **Technologies**  
 
-    - Blockchain    
-    - Hyperledger Fabric  
+- Blockchain    
+- Hyperledger Fabric  
     
-        - **OS**  
-            1. Linux Ubuntu  
+  1. **OS**  
+    1. Linux Ubuntu  
             
-        - **Default Env**  
-            1. Go  
-            1. Docker  
-            1. Docker Compose  
-            1. NodeJS + NPM  
+  1. **Default Env**  
+    1. Go  
+    1. Docker  
+    1. Docker Compose  
+    1. NodeJS + NPM  
 
 ---
 ## 개발 파트 및 구성 인원
