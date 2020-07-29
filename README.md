@@ -9,10 +9,10 @@
      Linux Ubuntu   
      
   - **Default Env**  
-     Go  
-     Docker  
-     Docker Compose  
-     NodeJS + NPM  
+    - Go  
+    - Docker  
+    - Docker Compose  
+    - NodeJS + NPM  
 
 ---
 ## 개발 파트 및 구성 인원
