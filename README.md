@@ -25,6 +25,6 @@ __Server :__ `허강주`
 
 ### 회의 및 개발 log
 
-[dev_log.md](https://github.com/byun618/KNUCoin/blob/master/dev_log.md"dev_log.md")
+[dev_log.md](https://github.com/byun618/KNUCoin/blob/master/dev_log.md)
 
 ---
