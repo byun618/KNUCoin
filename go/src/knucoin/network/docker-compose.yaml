@@ -37,7 +37,7 @@ services:
       - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.sales.knucoin.com:7051
       - CORE_PEER_GOSSIP_ENDPOINT=peer0.sales.knucoin.com:7051
       - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.sales.knucoin.com:7051
-      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=net_knucoin
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=net_knu_coin
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start
     ports:
@@ -63,7 +63,7 @@ services:
       - CORE_PEER_LOCALMSPID=SalesOrg
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/peer/
       - CORE_PEER_ADDRESS=peer1.sales.knucoin.com:7051
-      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=net_knucoin
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=net_knu_coin
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start
     ports:
@@ -89,7 +89,7 @@ services:
       - CORE_PEER_LOCALMSPID=CustomerOrg
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/peer/
       - CORE_PEER_ADDRESS=peer0.customer.knucoin.com:7051
-      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=net_knucoin
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=net_knu_coin
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start
     ports:
@@ -115,7 +115,7 @@ services:
       - CORE_PEER_LOCALMSPID=CustomerOrg
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/peer/
       - CORE_PEER_ADDRESS=peer1.customer.knucoin.com:7051
-      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=net_knucoin
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=net_knu_coin
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start
     ports:
