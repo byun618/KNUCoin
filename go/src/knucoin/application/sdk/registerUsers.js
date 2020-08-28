@@ -49,7 +49,7 @@ async function main(args, res) {
         await wallet.import(args[0], userIdentity);
         console.log(`register: Successfully registered and enrolled client user(id:${args[0]}) of ${args[2]} and imported it into the wallet`);
 
-        // sdk.send(true, [args[0], args[2]], 'initWallet', [args[0]], res)
+        sdk.send(true, [args[0], args[2]], 'initWallet', [args[0]], res)
         res.send('success')
 
         

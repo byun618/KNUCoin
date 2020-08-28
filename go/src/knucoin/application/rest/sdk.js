@@ -11,11 +11,11 @@ async function send(type, user, func, args, res){
         let url = ''
         switch(user[1]){
             case 'SalesOrg':
-                url = "http://knucoin:knucoin@localhost:5984"
+                url = "http://knucoin:knucoin@localhost:9984"
                 ccpPath = path.resolve(__dirname, '..', 'connection_sales.json')
                 break;
             case 'CustomerOrg':
-                url = "http://knucoin:knucoin@localhost:6984"
+                url = "http://knucoin:knucoin@localhost:10984"
                 ccpPath = path.resolve(__dirname, '..', 'connection_customer.json')
                 break;
         }
