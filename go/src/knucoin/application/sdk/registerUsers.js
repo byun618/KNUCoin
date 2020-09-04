@@ -47,17 +47,20 @@ async function main(args, res) {
         const enrollment = await ca.enroll({ enrollmentID: args[0], enrollmentSecret: secret });
         const userIdentity = X509WalletMixin.createIdentity(args[2], enrollment.certificate, enrollment.key.toBytes());
         await wallet.import(args[0], userIdentity);
-        console.log(`register: Successfully registered and enrolled client user(id:${args[0]}) of ${args[2]} and imported it into the wallet`);
 
-        sdk.send(true, [args[0], args[2]], 'initWallet', [args[0]], res)
+        // Excute ChainCode to init Wallet
+        const network = await gateway.getNetwork('channelsales1');
+        const contract = network.getContract('knucoin-cc');
+
+        await contract.submitTransaction('initWallet', ...[args[0]])
+        await gateway.disconnect();
+
+        console.log(`register: Successfully registered and enrolled client user(id:${args[0]}) of ${args[2]} and imported it into the wallet`);
         res.send('success')
 
-        
-
     } catch (error) {
-        console.error(`register: Failed to enroll admin user(id:${args[0]}) of ${args[2]}: ${error}`);
+        console.error(`register: Failed to enroll client user(id:${args[0]}) of ${args[2]}: ${error}`);
         process.exit(1);
-        res.send('fail')
     }
 }
 

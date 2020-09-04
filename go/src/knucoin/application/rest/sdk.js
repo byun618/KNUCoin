@@ -31,21 +31,21 @@ async function send(type, user, func, args, res){
         const gateway = new Gateway();
         await gateway.connect(ccpPath, { wallet, identity: user[0], discovery: { enabled: true, asLocalhost: true } });
         const network = await gateway.getNetwork('channelsales1');
-        const contract = network.getContract('coin2-cc');
+        const contract = network.getContract('knucoin-cc');
 
         if(type){
             await contract.submitTransaction(func, ...args);
             console.log('sdk :Transaction has been submitted');
             await gateway.disconnect();
-            // res.send('success');
+            res.send('success');
         }else{
             const result = await contract.evaluateTransaction(func, ...args);
             console.log(`sdk :Transaction has been evaluated, result is: ${result.toString()}`);
-            // res.send(result.toString());
+            res.send(result.toString());
         }
     } catch (error) {
         console.error(`sdk :Failed to submit transaction: ${error}`);
-        // res.send(`Failed to submit transaction: ${error}`);
+        res.send(`Failed to submit transaction: ${error}`);
     }
 }
 

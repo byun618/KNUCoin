@@ -32,6 +32,31 @@ app.post('/api/registUser', (req, res) => {
     regist.main(args, res)
 })
 
+app.post('/api/chargeMoney', (req, res) => {
+   
+    id = req.body.id
+    org = req.body.org
+    amount = req.body.amount
+
+    user = [id, org]
+    args = [id, amount]
+
+    sdk.send(true, user, 'chargeMoney', args, res)
+})
+
+app.post('/api/transferMoney', (req, res) => {
+
+    sender = req.body.sender
+    receiver = req.body.receiver
+    amount = req.body.amount
+    org = req.body.org
+
+    user = [sender, org]
+    args = [sender, receiver, amount]
+
+    sdk.send(true, user, 'transferMoney', args, res)
+})
+
 app.post('/api/getWallet', (req, res) => {
 
     id = req.body.id

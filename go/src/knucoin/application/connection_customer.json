@@ -53,7 +53,7 @@
     },
     "peers": {
         "peer0.customer.knucoin.com": {
-            "url": "grpc://localhost:7051",
+            "url": "grpc://localhost:9051",
             "tlsCACerts": {
                 "path": "../../network/crypto-config/peerOrganizations/customer.knucoin.com/peers/peer0.customer.knucoin.com/msp/tlscacerts/tlsca.customer.knucoin.com-cert.pem"
             },
