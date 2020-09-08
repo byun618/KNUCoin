@@ -21,8 +21,22 @@ docker exec -e "CORE_PEER_LOCALMSPID=CustomerOrg" -e "CORE_PEER_MSPCONFIGPATH=/o
 docker exec -e "CORE_PEER_LOCALMSPID=CustomerOrg" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/customer.knucoin.com/users/Admin@customer.knucoin.com/msp" -e "CORE_PEER_ADDRESS=peer1.customer.knucoin.com:7051" cli peer channel join -b channelsales1.block
 
 sleep 1
-#install and instantiate chaincode 
+# Install and instantiate chaincode 
+
+# peer0.sales.com
 docker exec cli peer chaincode install -n knucoin-cc -v 1.02 -p chaincode/go
 sleep 1
-docker exec cli peer chaincode instantiate -o orderer.knucoin.com:7050 -C channelsales1 -n knucoin-cc -v 1.02 -c '{"Args":[""]}' -P "OR ('SalesOrg.member','CustomerOrg.member')"
 
+# peer1.sales.com
+docker exec -e "CORE_PEER_ADDRESS=peer1.sales.knucoin.com:7051" cli peer chaincode install -n knucoin-cc -v 1.02 -p chaincode/go
+sleep 1
+
+# peer0.customer.com
+docker exec -e "CORE_PEER_LOCALMSPID=CustomerOrg" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/customer.knucoin.com/users/Admin@customer.knucoin.com/msp" -e "CORE_PEER_ADDRESS=peer0.customer.knucoin.com:7051" cli peer chaincode install -n knucoin-cc -v 1.02 -p chaincode/go
+sleep 1
+
+# peer1.customer.com
+docker exec -e "CORE_PEER_LOCALMSPID=CustomerOrg" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/customer.knucoin.com/users/Admin@customer.knucoin.com/msp" -e "CORE_PEER_ADDRESS=peer1.customer.knucoin.com:7051" cli peer chaincode install -n knucoin-cc -v 1.02 -p chaincode/go
+sleep 1
+
+docker exec cli peer chaincode instantiate -o orderer.knucoin.com:7050 -C channelsales1 -n knucoin-cc -v 1.02 -c '{"Args":[""]}' -P "OR ('SalesOrg.member','CustomerOrg.member')"
