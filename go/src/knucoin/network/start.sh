@@ -41,3 +41,5 @@ sleep 1
 
 docker exec cli peer chaincode instantiate -o orderer.knucoin.com:7050 -C channelsales1 -n knucoin-cc -v 1.02 -c '{"Args":[""]}' -P "OR ('SalesOrg.member','CustomerOrg.member')"
 
+cd ../application/sdk
+node enrollAdmin.js
