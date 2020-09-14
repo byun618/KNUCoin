@@ -10,7 +10,7 @@ rm -fr crypto-config/*
 ./bin/cryptogen generate --config=./crypto-config.yaml
 
 # generate genesis block for orderer
-mkdir config
+#mkdir config
 ./bin/configtxgen -profile OrdererGenesis -outputBlock ./config/genesis.block
 
 # generate channel 1 configuration transaction

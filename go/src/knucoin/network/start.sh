@@ -1,6 +1,37 @@
-#!/bin/sh
+#!/bin/bash
+
+
+set -ev
+
+function replacePrivateKey() {
+    echo "ca key file exchange"
+    cp docker-compose-template.yaml docker-compose.yaml
+    PRIV_KEY1=$(ls crypto-config/peerOrganizations/sales.knucoin.com/ca/ | grep _sk)
+    PRIV_KEY2=$(ls crypto-config/peerOrganizations/customer.knucoin.com/ca/ | grep _sk)
+    sed -i "s/CA_SALES_PRIVATE_KEY/${PRIV_KEY1}/g" docker-compose.yaml
+    sed -i "s/CA_CUSTOMER_PRIVATE_KEY/${PRIV_KEY2}/g" docker-compose.yaml
+}
+
+function checkPrereqs() {
+    # check config dir
+    if [ ! -d "crypto-config" ]; then
+        echo "crypto-config dir missing"
+        exit 1
+    fi
+    # check crypto-config dir
+     if [ ! -d "config" ]; then
+        echo "config dir missing"
+        exit 1
+    fi
+}
+
+checkPrereqs
+replacePrivateKey
 
 docker-compose -f docker-compose.yaml down
+
+replacePrivateKey
+
 docker-compose -f docker-compose.yaml up -d
 
 # Create the channel
