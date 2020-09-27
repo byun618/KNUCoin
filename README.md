@@ -37,12 +37,13 @@ __Server :__ `허강주`
 
 ### (If you are using a Linux-based system, see steps below)
 Go down to the [for Linux Users](https://github.com/byun618/KNUCoin#for-Linux-users) section below.
----
+
 
 ## For Linux users
 Since Hyperledger Fabric has platform-specific binaries, like cryptogen, if you are 
 using a Linux-based system, you will have to take a couple additional steps to ensure 
 that the certificates are being generated properly. 
+
 
 1. Creat a new directory. somewhere to keep both the `fabric-samples`, and the `KNUCoin` repo:
 
@@ -70,6 +71,7 @@ fabric-repo$ cd KNUCoin
 
 
 4. Remove the bin folder from `KNUCoin` (since it assumes platform binaries that are made for MacOS).
+
 
 ```shell
 fabric-repo/KNUCoin/go/src/knucoin/network$ rm -rf bin/
