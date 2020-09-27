@@ -35,9 +35,16 @@ __Server :__ `허강주`
 
 ---
 
-### For Linux user
+### (If you are using a Linux-based system, see steps below)
+Go down to the [for Linux Users](https://github.com/byun618/KNUCoin#for-Linux-users) section below.
+---
 
-1. Creat a new directory. somewhere to keep both the fabric-samples, and the KNUCoin repo:
+## For Linux users
+Since Hyperledger Fabric has platform-specific binaries, like cryptogen, if you are 
+using a Linux-based system, you will have to take a couple additional steps to ensure 
+that the certificates are being generated properly. 
+
+1. Creat a new directory. somewhere to keep both the `fabric-samples`, and the `KNUCoin` repo:
 
 ```shell
 $ mkdir fabric-repo 
@@ -53,7 +60,7 @@ fabric-repo$ curl -sSL http://bit.ly/2ysbOFE | bash -s -- 1.4.4 1.4.4 0.4.18
 ```
 
 
-3. After the downloads are complete, you should see a newly created fabric-samples repo. Next, let's go ahead and clone the raft-fabric-sample repo and then cd into it.
+3. After the downloads are complete, you should see a newly created `fabric-samples` repo. Next, let's go ahead and clone the `KNUCoin` repo and then cd into it.
 
 
 ```shell
@@ -62,19 +69,19 @@ fabric-repo$ cd KNUCoin
 ```
 
 
-4. Remove the bin folder from KNUCoin (since it assumes platform binaries that are made for MacOS).
+4. Remove the bin folder from `KNUCoin` (since it assumes platform binaries that are made for MacOS).
 
 ```shell
 fabric-repo/KNUCoin/go/src/knucoin/network$ rm -rf bin/
 ```
 
-5. Copy the bin folder from fabric-samples, and paste it into the KNUCoin folder
+5. Copy the bin folder from `fabric-samples`, and paste it into the `KNUCoin` folder
 
 ```shell
 fabric-repo/KNUCoin/go/src/knucoin/network$ mkdir bin && cp -r ../../../../../fabric-samples/bin . 
 ```
 
-6. If you do a ls in your bin folder within your KNUCoin, you should see the following:
+6. If you do a ls in your bin folder within your `KNUCoin`, you should see the following:
 
 ```shell
 fabric-repo/KNUCoin/go/src/knucoin/network/bin$ ls
