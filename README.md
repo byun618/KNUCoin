@@ -32,3 +32,45 @@ __Server :__ `허강주`
 ## 2020-09-21
 
 ![KakaoTalk_Photo_2020-09-21-18-41-38](https://user-images.githubusercontent.com/56465854/93752838-2fe41180-fc3a-11ea-88ad-2195e65e3743.png)
+
+---
+
+### For Linux user
+
+1. Creat a new directory. somewhere to keep both the fabric-samples, and the KNUCoin repo:
+
+'''  $mkdir fabric-repo '''
+
+
+2. Go into your newly created repo, and download the latest production release from Fabric. If you have any errors downloading the binaries, you may need to install wget on your system. 
+
+
+''' $ cd fabric-repo
+fabric-repo$ curl -sSL http://bit.ly/2ysbOFE | bash -s -- 1.4.4 1.4.4 0.4.18 '''
+
+
+3. After the downloads are complete, you should see a newly created fabric-samples repo. Next, let's go ahead and clone the raft-fabric-sample repo and then cd into it.
+
+
+''' fabric-repo$ git clone https://github.com/byun816/KNUCoin.git
+fabric-repo$ cd KNUCoin '''
+
+
+4. Remove the bin folder from KNUCoin (since it assumes platform binaries that are made for MacOS).
+
+''' fabric-repo/KNUCoin/go/src/knucoin/network$ rm -rf bin/ '''
+
+
+5. Copy the bin folder from fabric-samples, and paste it into the KNUCoin folder
+
+''' fabric-repo/KNUCoin/go/src/knucoin/network$ mkdir bin && cp -r ../../../../../fabric-samples/bin . '''
+
+
+6. If you do a ls in your bin folder within your KNUCoin, you should see the following:
+
+''' fabric-repo/KNUCoin/go/src/knucoin/network/bin$ ls
+configtxgen  configtxlator  cryptogen  discover  fabric-ca-client  fabric-ca-server  idemixgen  orderer  peer '''
+
+
+
+
