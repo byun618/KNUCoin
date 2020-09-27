@@ -35,8 +35,50 @@ __Server :__ `허강주`
 
 ---
 
+
+# Steps
+1. [Clone the repo](#step-1-clone-the-repo)
+2. [Install dependencies](#step-2-Install-dependencies)
+3. [Generate cryptographic material](#step-3-Generate)
+4. [Create a cryptographic identity](#step-4-Create-a-cryptographic-identity)
+
+
 ### (If you are using a Linux-based system, see steps below)
 Go down to the [for Linux Users](https://github.com/byun618/KNUCoin#for-Linux-users) section below.
+
+## Step 1. Clone the repo
+
+
+Clone this repo by issuing the following command in Terminal. Next, navigate to the newly cloned folder.
+
+```
+Workdir$ git clone https://github.com/byun618/KNUCoin.git
+Workdir$ cd KNUCoin
+```
+## Step 2. Install dependencies
+
+```
+KNUCoin/go/src/knucoin/application$ npm install
+
+```
+
+## Step 3. Generate 
+
+```
+KNUCoin/go/src/knucoin/network$ ./generate.sh
+```
+
+Next,
+
+```
+KNUCoin/go/src/knucoin/network$ ./start.sh
+```
+
+## Step 4. Create a cryptographic identity
+
+```
+KNUCoin/go/src/knucoin/application$ ./updateKeyStore.sh
+```
 
 
 ## For Linux users
