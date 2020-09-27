@@ -39,7 +39,9 @@ __Server :__ `허강주`
 
 1. Creat a new directory. somewhere to keep both the fabric-samples, and the KNUCoin repo:
 
-'''  $mkdir fabric-repo '''
+'''shell
+$mkdir fabric-repo 
+'''
 
 
 2. Go into your newly created repo, and download the latest production release from Fabric. If you have any errors downloading the binaries, you may need to install wget on your system. 
