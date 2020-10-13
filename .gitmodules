@@ -1,0 +1,6 @@
+[submodule "UFO_Server"]
+	path = UFO_Server
+	url = https://github.com/Cozy-Ho/UFO_Server
+[submodule "UFO_Mobile"]
+	path = UFO_Mobile
+	url = https://github.com/myungsworld/UFO_Mobile
