@@ -56,7 +56,3 @@
 [https://github.com/Cozy-Ho/UFO_Server](#https://github.com/Cozy-Ho/UFO_Server)
 * Mobile    
 [https://github.com/myungsworld/UFO_Mobile](#https://github.com/myungsworld/UFO_Mobile)
-
-
-
-
