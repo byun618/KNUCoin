@@ -46,9 +46,13 @@
 * ~~__Fabric__ : `박유민 송동명`~~  
 ~~__Server__ : `허강주 이상훈`~~   
 ~~__Mobile__ : `변상현 송동명`~~
-* __Server__ : `허강주 이상훈 변상현`  
-__Mobile__ : `변상현 송동명 박유민`
+* __Server__ : `허강주 이상훈 변상현`
+* __Mobile__ : `변상현 송동명 박유민`
 
-
-
-
+## 파트별 Git Repository
+* Fabric    
+[https://github.com/yuminee/UFO_FabricNet](#https://github.com/yuminee/UFO_FabricNet)
+* Server    
+[https://github.com/Cozy-Ho/UFO_Server](#https://github.com/Cozy-Ho/UFO_Server)
+* Mobile    
+[https://github.com/myungsworld/UFO_Mobile](#https://github.com/myungsworld/UFO_Mobile)
