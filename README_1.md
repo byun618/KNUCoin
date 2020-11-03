@@ -51,8 +51,8 @@
 
 ## 파트별 Git Repository
 * Fabric    
-[https://github.com/yuminee/UFO_FabricNet](#https://github.com/yuminee/UFO_FabricNet)
+[https://github.com/yuminee/UFO_FabricNet](https://github.com/yuminee/UFO_FabricNet)
 * Server    
-[https://github.com/Cozy-Ho/UFO_Server](#https://github.com/Cozy-Ho/UFO_Server)
+[https://github.com/Cozy-Ho/UFO_Server](https://github.com/Cozy-Ho/UFO_Server)
 * Mobile    
-[https://github.com/myungsworld/UFO_Mobile](#https://github.com/myungsworld/UFO_Mobile)
+[https://github.com/myungsworld/UFO_Mobile](https://github.com/myungsworld/UFO_Mobile)
