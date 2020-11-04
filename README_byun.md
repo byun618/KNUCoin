@@ -58,9 +58,9 @@ https://github.com/byun618/UFO#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD
     * AWS 이관 작업을 맡아서 진행할 예정
 
 ## 파트별 Git Repository
+* Mobile    
+[https://github.com/myungsworld/UFO_Mobile](https://github.com/myungsworld/UFO_Mobile)
 * Fabric    
 [https://github.com/yuminee/UFO_FabricNet](https://github.com/yuminee/UFO_FabricNet)
 * Server    
 [https://github.com/Cozy-Ho/UFO_Server](https://github.com/Cozy-Ho/UFO_Server)
-* Mobile    
-[https://github.com/myungsworld/UFO_Mobile](https://github.com/myungsworld/UFO_Mobile)
