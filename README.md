@@ -7,7 +7,7 @@
 [4. 개발 계획](#개발-계획)       
 [5. 개발 파트](#개발-파트) 
 
-## 프로젝트 개요
+## 프로젝트 개요 (2020.7 - )
 * **명칭**  
 **U**niversity **F**estival in **O**ne  
 * **개요**  
@@ -30,15 +30,6 @@
     * S3를 이용해 Hyperledger Fabric의 인증서 및 축제 관련 이미지 등 정적데이터 관리
     * IAM 정책을 통해 각종 액세스 관리
 
-## 개발 과정
-* 기본적인 블록체인, Hyperledger Fabric 관련 공부 및 실습
-* Server, Fabirc 파트로 나누어 각 파트 진행
-* Fabric 파트 chaincode 및 solo 방식으로 구현
-* Server, Mobile, Fabric 파트로 나누어 각각 개발 진행(2020.09.21)
-* 각 파트의 repo를 새로 생성, sub module로 나누어 관리(2020.10.13)
-* Fabric 파트 개발 완료로 Server, Mobile로 파트 재편성(2020.11.03)
-* 자세한 사항은 각 파트 repo 확인.
-
 ## 개발 파트
 * __PM__ : `변상현`    
 * ~~__ChainCode + Network__ : `송동명 박유민 이상훈`~~  
@@ -48,6 +39,15 @@
 ~~__Mobile__ : `변상현 송동명`~~
 * __Server__ : `허강주 이상훈 변상현`   
  __Mobile__ : `변상현 송동명 박유민`
+
+## 개발 과정
+* 기본적인 블록체인, Hyperledger Fabric 관련 공부 및 실습
+* Server, Fabirc 파트로 나누어 각 파트 진행
+* Fabric 파트 chaincode 및 solo 방식으로 구현
+* Server, Mobile, Fabric 파트로 나누어 각각 개발 진행(2020.09.21)
+* 각 파트의 repo를 새로 생성, sub module로 나누어 관리(2020.10.13)
+* Fabric 파트 개발 완료로 Server, Mobile로 파트 재편성(2020.11.03)
+* 자세한 사항은 각 파트 repo 확인.
 
 ## 파트별 Git Repository
 * Fabric    
