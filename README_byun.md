@@ -55,7 +55,8 @@ https://github.com/byun618/UFO#%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD
     개발 초기 단계에 블록체인 개발 진행할 때, Network의 설정부분을 진행하고 구동 시킬때 Script파일로 동작할 수 있게 개발
 
 * Server
-    * AWS 이관 작업을 맡아서 진행할 예정
+    * AWS S3 구현
+      * EC2에서 서버가 구동 되겠지만, 로컬환경에서 개발은 진행 될것이고, S3는 계속 쓰여야 하기에 각 팀원에게 AWS IAM 유저를 부여하고 Role과 Policy를 이용하여 관리
 
 ## 파트별 Git Repository
 * Mobile    
