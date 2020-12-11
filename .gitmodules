@@ -4,6 +4,6 @@
 [submodule "UFO_Mobile"]
 	path = UFO_Mobile
 	url = https://github.com/myungsworld/UFO_Mobile
-[submodule "UFO_FabricNet"]
-	path = UFO_FabricNet
-	url = https://github.com/yuminee/UFO_FabricNet.git
+[submodule "UFO_FabricNet_raft"]
+	path = UFO_FabricNet_raft
+	url = https://github.com/yuminee/UFO_FabricNet_raft.git
